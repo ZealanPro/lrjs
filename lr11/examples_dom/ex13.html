@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Пример 13</title>
+</head>
+<body>
+
+  <ul>
+    <li>Пункт 1</li>
+    <li>Пункт 2</li>
+  </ul>
+<p></p>
+  <script>
+    let ul = document.querySelector('ul')
+    ul.insertAdjacentHTML('beforebegin', '<p>до ul</p>')
+    ul.insertAdjacentHTML('afterend', '<p>после ul</p>')
+
+    ul.insertAdjacentHTML('afterbegin', '<li>до li</li>')
+    ul.insertAdjacentHTML('beforeend', '<li>после li</li>')
+  </script>
+</body>
+</html>
